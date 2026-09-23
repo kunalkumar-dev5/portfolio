@@ -61,8 +61,10 @@ export const ContactSection = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         setIsSubmitting(true);
+        const form = e.currentTarget;
 
         setTimeout(() => {
+            form.reset();
             toast({
                 title: "Message sent!",
                 description: "Thank you for your message. i'll get back to you soon.",
@@ -162,7 +164,7 @@ export const ContactSection = () => {
                                 <label htmlFor="message" className="black text-sm font-medium mb-2">
                                     {" "}
                                     Your Message</label>
-                                <input type="textarea" id="message" name="message" required className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden  focus:ring-2 focus:ring-primary resize:none" placeholder="Hello, I'd like to tack about..." />
+                                <textarea id="message" name="message" required className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary resize-none" placeholder="Hello, I'd like to talk about..." rows={5} />
                             </div>
                             <button
                                 type="submit"

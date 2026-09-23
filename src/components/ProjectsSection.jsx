@@ -40,12 +40,12 @@ const projects = [
     },
     {
         id: 3,
-        title: "Saas Landing Page",
+        title: "AI-Saas Platform",
         description: "A beautiful landing page app using React and Tailwind",
         Image: "/project3.png",
-        tags: ["React", "TailwindCSS", "Supabase"],
-        demoURL: "#",
-        githubURL: "#",
+        tags: ["React", "TailwindCSS", "Supabase","clerk"],
+        demoURL: "https://portfolio-coral-one-14.vercel.app",
+        githubURL: "https://github.com/kunalkumar-dev5/SaaS-AI-Platform",
     },
 ]
 
@@ -105,15 +105,13 @@ export const ProjectsSection = () => {
                                 </div>
                             </div>
                         </div>
-
                     ))}
                 </div>
 
                 <div className="text-center mt-12">
                     <a className="cosmic-button w-fit flex items-center mx-auto gap-2"
                         target="_blank"
-                        href="https://github.com/kunalkumar-dev5"
-
+                        href="https://github.com/kunalkumar-dev5"s
                     >
                         Check My Github <ArrowRight size={16} />
                     </a>
