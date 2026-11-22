@@ -1,6 +1,4 @@
-import { Code } from "lucide-react";
-import { User } from "lucide-react";
-import { Briefcase } from "lucide-react";
+import { Database, Layers, Monitor, Server } from "lucide-react";
 
 
 export const AboutSection = () => {
@@ -35,12 +33,12 @@ export const AboutSection = () => {
                         <div className="gradient-border p-6 card-hover">
                             <div className="flex items-start gap-4">
                                 <div className="p-3 rounded-full bg-primary/10">
-                                    <Code className="h-6 w-6 text-primary" />
+                                    <Layers className="h-6 w-6 text-primary" />
                                 </div>
                                 <div className="text-left">
-                                    <h4 className="font-semibold text-lg">Web Development</h4>
+                                    <h4 className="font-semibold text-lg">🌐 Full Stack Development</h4>
                                     <p className="text-muted-foreground">
-                                        Creating responsive websites and web applications with modern frameworks.
+                                        Building complete web applications using React, Node.js, Express, and MongoDB.
                                     </p>
                                 </div>
                             </div>
@@ -48,13 +46,13 @@ export const AboutSection = () => {
                         <div className="gradient-border p-6 card-hover">
                             <div className="flex items-start gap-4">
                                 <div className="p-3 rounded-full bg-primary/10">
-                                    <User className="h-6 w-6 text-primary" />
-                                    
+                                    <Monitor className="h-6 w-6 text-primary" />
+
                                 </div>
                                 <div className="text-left">
-                                    <h4 className="font-semibold text-lg">UI/UX Design</h4>
+                                    <h4 className="font-semibold text-lg">⚛️ Frontend Development</h4>
                                     <p className="text-muted-foreground">
-                                        Designing intuitive user interfaces and seamless user experiences.
+                                        Creating responsive and user-friendly interfaces with React, Tailwind CSS, and modern JavaScript.
                                     </p>
                                 </div>
                             </div>
@@ -62,12 +60,25 @@ export const AboutSection = () => {
                         <div className="gradient-border p-6 card-hover">
                             <div className="flex items-start gap-4">
                                 <div className="p-3 rounded-full bg-primary/10">
-                                    <Briefcase className="h-6 w-6 text-primary" />
+                                    <Server className="h-6 w-6 text-primary" />
                                 </div>
                                 <div className="text-left">
-                                    <h4 className="font-semibold text-lg">Project Management</h4>
+                                    <h4 className="font-semibold text-lg">🔧 Backend Development</h4>
                                     <p className="text-muted-foreground">
-                                        Leading projects from conception to completion with agile methodologies.
+                                        Designing scalable REST APIs, authentication systems, and business logic using Node.js and Express.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="gradient-border p-6 card-hover">
+                            <div className="flex items-start gap-4">
+                                <div className="p-3 rounded-full bg-primary/10">
+                                    <Database className="h-6 w-6 text-primary" />
+                                </div>
+                                <div className="text-left">
+                                    <h4 className="font-semibold text-lg">🗄️ Database Design</h4>
+                                    <p className="text-muted-foreground">
+                                        Working with MongoDB and Mongoose to build efficient and scalable data models.
                                     </p>
                                 </div>
                             </div>

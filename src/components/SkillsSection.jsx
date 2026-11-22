@@ -6,7 +6,6 @@ import { cn } from "../lib/utils";
 const skills = [
     // Languages
     { name: "JavaScript", level: 90, category: "Languages" },
-    { name: "TypeScript", level: 70, category: "Languages" },
     { name: "Python", level: 80, category: "Languages" },
     { name: "C++", level: 75, category: "Languages" },
     { name: "Java", level: 80, category: "Languages" },
@@ -15,26 +14,39 @@ const skills = [
     { name: "React.js", level: 95, category: "frontend" },
     { name: "Next.js", level: 90, category: "frontend" },
     { name: "Vue.js", level: 90, category: "frontend" },
-    { name: "Tailwind", level: 90, category: "frontend" },
-    { name: "Flutter", level: 80, category: "frontend" },
+    { name: "Tailwind CSS", level: 90, category: "frontend" },
+    { name: "HTML5", level: 80, category: "frontend" },
 
     // Backend
     { name: "Node.js", level: 80, category: "backend" },
     { name: "Express.js", level: 75, category: "backend" },
+    { name: "REST APIs", category: "backend" },
+    { name: "JWT", category: "backend" },
 
     // Databases
     { name: "MongoDB", level: 70, category: "Databases" },
-    { name: "PostgreSQL", level: 60, category: "Databases" },
+    { name: "Mongoose", level: 60, category: "Databases" },
     { name: "MySQL", level: 75, category: "Databases" },
 
-    //Cloud/DevOps
-    { name: "Google Cloud", level: 85, category: "Cloud/DevOps" },
-    { name: "Firebase", level: 75, category: "Cloud/DevOps" },
-    { name: "Docker", level: 80, category: "Cloud/DevOps" },
-    { name: "Git", level: 90, category: "Cloud/DevOps" },
+    //Tools
+    { name: "Git", level: 85, category: "Tools" },
+    { name: "GitHub", level: 75, category: "Tools" },
+    { name: "Postman", level: 80, category: "Tools" },
+    { name: "Cloudinary", level: 90, category: "Tools" },
+    { name: "Razorpay", level: 90, category: "Tools" },
+
+    // Services Section
+    { name: "✔ Full Stack Web Development", category: "Services Section" },
+    { name: "✔ Responsive Website Development", category: "Services Section" },
+    { name: "✔ REST API Development", category: "Services Section" },
+    { name: "✔ Authentication & Authorization", category: "Services Section" },
+    { name: "✔ MongoDB Database Design", category: "Services Section" },
+    { name: "✔ Payment Gateway Integration ", category: "Services Section" },
+    { name: "Dashboard Development", category: "Services Section" }
+
 ];
 
-const categories = ["all", "Languages", "frontend", "backend", "Databases", "Cloud/DevOps"]
+const categories = ["all", "Languages", "frontend", "backend", "Databases", "Tools", "Services Section"]
 
 export const SkillsSection = () => {
     const [activeCategory, setActiveCategory] = useState("all");
